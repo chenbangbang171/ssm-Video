@@ -8,5 +8,5 @@ public class Admin {
     private String admUserName;
     private String amdPwd;
     private String admRole;
-    private String bbb;
+    private String baabb;
 }
