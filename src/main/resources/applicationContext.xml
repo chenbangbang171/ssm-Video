@@ -40,7 +40,4 @@
         <property name="basePackage" value="com.video.mapper"></property>
     </bean>
 
-
-
-
 </beans>
