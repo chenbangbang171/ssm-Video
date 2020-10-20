@@ -6,11 +6,14 @@
 <mapper namespace="com.video.mapper.AdminMapper">
 
     <resultMap id="admin" type="com.video.pojo.Admin">
-
+        <id property="admId" column="id"></id>
+        <result property="admUserName" column="username"></result>
+        <result property="amdPwd" column="password"></result>
+        <result property="admRole" column="roles"></result>
     </resultMap>
 
     <select id="login" resultMap="admin">
-        select * from admin where username = #{adminName} and password = #{adminPwd}
+        select id,username,password,roles  from admin where username = #{adminName} and password = #{adminPwd}
     </select>
 
 

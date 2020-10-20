@@ -45,8 +45,41 @@
         th {
             text-align: center;
         }
+
+        .bottomBar p{
+            display: inline-block;
+            float: left;
+            margin-left: 10px;
+        }
+
+        #bottomDivBar{
+            float: right;
+        }
+
     </style>
     <script type="text/javascript">
+        window.onload = function () {
+            $("#currentPage").attr("style", "color:red");
+            <%--if ( <%=personPageInfo.getPageNum()%> = 1){currentPage--%>
+            if ($("#currentPage").html() == 1) {
+                $("#getpage-2").attr("style", "display:none");
+                $("#getpage-1").attr("style", "display:none");
+            }
+
+            if ($("#currentPage").html() == 2) {
+                $("#getpage-2").attr("style", "display:none");
+            }
+
+            // 最后一页
+            if ($("#currentPage").html() == ${pageInfo.navigateLastPage}) {
+                $("#getpage\\+1").attr("style", "display:none");
+                $("#getpage\\+2").attr("style", "display:none");
+            }
+            // 倒数第二页
+            if ($("#currentPage").html() == ${pageInfo.navigateLastPage}-1) {
+                $("#getpage\\+2").attr("style", "display:none");
+            }
+        }
         function showAddPage() {
             location.href = "${pageContext.request.contextPath}/video/addVideo";
         }
@@ -101,6 +134,11 @@
             //阻止事件默认行为   a  href  onclick
             //先执行onclick  后跳转
             return false;
+        }
+
+        function queryBooks(pageNum) {
+            $("#pageNum").val(pageNum);
+            $("#queryForm").submit();
         }
 
         var deleteNum = 0;
@@ -158,8 +196,6 @@
     </script>
 </head>
 <body>
-
-
 <nav class="navbar-inverse">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -185,7 +221,6 @@
             </p>
         </div>
         <!-- /.navbar-collapse -->
-
 
     </div>
     <!-- /.container-fluid -->
@@ -214,14 +249,17 @@
         <div class="col-md-4"></div>
         <div class="col-md-6">
             <!-- 查询相关组件 -->
-            <form class="navbar-form navbar-right" action="${pageContext.request.contextPath}/video/list" method="post">
+            <form  id="queryForm"  class="navbar-form navbar-right" action="${pageContext.request.contextPath}/video/list" method="post">
                 <input type="text" name="title" class="form-control" placeholder="标题" value="${queryVo.title}">
+                <!-- 设置隐藏域 传递当前页码 -->
+                <input type="hidden" name="pageNum" id="pageNum" value="1">
+
                 <div class="btn-group">
                     <button type="button" id="speakerName"
                             class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                         <c:forEach items="${speakerList}" var="speaker">
-                            <c:if test="${speaker.id == queryVo.speakerId}">
+                            <c:if test="${speaker.speakerId == queryVo.speakerId}">
                                 ${speaker.speakerName}
                             </c:if>
                         </c:forEach>
@@ -234,8 +272,8 @@
                         <li value=''><a href="#" onclick="showName(this,'',1)">--请选择老师--</a>
                         </li>
                         <c:forEach items="${speakerList}" var="speaker">
-                            <li value='${speaker.id}'><a href="#"
-                                                         onclick="showName(this,'${speaker.id}',1)">${speaker.speakerName}</a>
+                            <li value='${speaker.speakerId}'><a href="#"
+                               onclick="showName(this,'${speaker.speakerId}',1)">${speaker.speakerName}</a>
                             </li>
                         </c:forEach>
                     </ul>
@@ -246,7 +284,7 @@
                             class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                         <c:forEach items="${courseList}" var="course">
-                            <c:if test="${course.id == queryVo.courseId}">
+                            <c:if test="${course.courseId == queryVo.courseId}">
                                 ${course.courseTitle}
                             </c:if>
                         </c:forEach>
@@ -259,8 +297,8 @@
                         <li value=""><a href="#" onclick="showName(this,'',2)">--请选择课程--</a>
                         </li>
                         <c:forEach items="${courseList}" var="course">
-                            <li value="${course.id}"><a href="#"
-                                                        onclick="showName(this,${course.id},2)">${course.courseTitle}</a>
+                            <li value="${course.courseId}"><a href="#"
+                               onclick="showName(this,${course.courseId},2)">${course.courseTitle}</a>
                             </li>
                         </c:forEach>
                     </ul>
@@ -298,21 +336,21 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach items="${page.rows}" var="video" varStatus="status">
+            <c:forEach items="${pageInfo.list}" var="video" varStatus="status">
                 <tr>
-                    <td><input type="checkbox" name="ids" value="${video.id}"
+                    <td><input type="checkbox" name="ids" value="${video.videoId}"
                                onclick="selectOne(this)"/></td>
                     <td>${status.count}</td>
-                    <td>${video.title}</td>
-                    <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">${video.detail}</td>
+                    <td>${video.videoTitle}</td>
+                    <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">${video.videoDetail}</td>
                     <td>${video.speaker.speakerName}</td>
-                    <td>${video.time}</td>
-                    <td>${video.playNum}</td>
-                    <td><a href="${pageContext.request.contextPath}/video/edit?id=${video.id}"><span
+                    <td>${video.videoTime}</td>
+                    <td>${video.videoPlayNum}</td>
+                    <td><a href="${pageContext.request.contextPath}/video/edit?id=${video.videoId}"><span
                             class="glyphicon glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
                     <!-- js中如果使用el表达式，请用单引号包括，避免造成一些语法问题 -->
                     <td><a
-                            onclick="return delVideoById(this,'${video.id}','${video.title}')"><span
+                            onclick="return delVideoById(this,'${video.videoId}','${video.videoTitle}')"><span
                             class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
                 </tr>
 
@@ -325,9 +363,18 @@
 
     </form>
 </div>
-<div class="container">
-    <div class="navbar-right" style="padding-right: 17px">
-        <p:page url="${pageContext.request.contextPath}/video/list"></p:page>
+<div class="container" id="bottomDivBar">
+    <div class="bottomBar" style="padding-right: 17px">
+<%--        <p:page url="${pageContext.request.contextPath}/video/list"></p:page>--%>
+    <p href="javascript:void(0)" onclick="queryBooks(1)">首页</p>
+    <p href="javascript:void(0)" onclick="queryBooks(${pageInfo.prePage})">上一页</p>
+    <p href="javascript:void(0)" id="getpage-2" style="" onclick="queryBooks(${pageInfo.pageNum-2})">${pageInfo.pageNum-2}</p>
+    <p href="javascript:void(0)" id="getpage-1" style="" onclick="queryBooks(${pageInfo.pageNum-1})">${pageInfo.pageNum-1}</p>
+    <p href="javascript:void(0)" id="currentPage" onclick="queryBooks(${pageInfo.pageNum})">${pageInfo.pageNum}</p>
+    <p href="javascript:void(0)" id="getpage+1"style="" onclick="queryBooks(${pageInfo.pageNum+1})">${pageInfo.pageNum+1}</p>
+    <p href="javascript:void(0)" id="getpage+2" style="" onclick="queryBooks(${pageInfo.pageNum+2})">${pageInfo.pageNum+2}</p>
+    <p href="javascript:void(0)" onclick="queryBooks(${pageInfo.nextPage})">下一页</p>
+    <p href="javascript:void(0)" onclick="queryBooks(${pageInfo.navigateLastPage})">尾页</p>
     </div>
 </div>
 

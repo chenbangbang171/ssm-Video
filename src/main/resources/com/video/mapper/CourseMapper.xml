@@ -23,7 +23,7 @@
     </resultMap>
 
     <select id="queryAllCourse" resultMap="course">
-        select  * from course
+         select  id courseId,course_title,course_desc,subject_id from course
     </select>
 
 

@@ -31,5 +31,23 @@
          from video v,speaker s where v.id = #{videoId} and v.speaker_id = s.id
     </select>
 
+    <select id="queryAllVideo" resultMap="video">
+        select v.id videoId,v.title,v.detail,v.time,v.speaker_id,
+                v.course_id,v.video_url,v.image_url,v.play_num,
+                s.id speakerId, s.speaker_name,s.speaker_desc,s.speaker_job,s.head_img_url
+         from video v,speaker s where  v.speaker_id = s.id
+        <trim>
+            <if test="title!=null and title!=''">
+                and v.title like concat('%',#{title},'%')
+            </if>
+            <if test="speakerId!=null and speakerId!=''">
+                and v.speaker_id=#{speakerId}
+            </if>
+            <if test="courseId!=null and courseId!=''">
+                and v.course_id=#{courseId}
+            </if>
+        </trim>
+    </select>
+
 
 </mapper>
