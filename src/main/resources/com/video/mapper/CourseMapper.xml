@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 该mapper.xml映射文件的唯一标识符 -->
+<mapper namespace="com.video.mapper.CourseMapper">
+
+    <resultMap id="course" type="com.video.pojo.Course">
+        <id property="courseId" column="courseId"></id>
+        <result property="courseTitle" column="course_title"></result>
+        <result property="courseDesc" column="course_desc"></result>
+        <result property="subjectId" column="subject_id"></result>
+        <collection property="videoList" ofType="com.video.pojo.Video">
+            <id property="videoId" column="videoId"></id>
+            <result property="videoTitle" column="title"></result>
+            <result property="videoDetail" column="detail"></result>
+            <result property="videoTime" column="time"></result>
+            <result property="videoSpeakerId" column="speaker_id"></result>
+            <result property="videoCourseId" column="course_id"></result>
+            <result property="videoUrl" column="video_url"></result>
+            <result property="videoImageUrl" column="image_url"></result>
+            <result property="videoPlayNum" column="play_num"></result>
+        </collection>
+    </resultMap>
+
+    <select id="queryAllCourse" resultMap="course">
+        select  * from course
+    </select>
+
+
+    <select id="queryCourseById" resultMap="course" >
+        select  c.id courseId,c.course_title,c.course_desc,c.subject_id,
+                  v.id videoId,v.title,v.detail,v.time,v.speaker_id,
+                   v.course_id,v.video_url,v.image_url,v.play_num
+         from course c inner join video v on c.id = v.course_id and  c.id = #{courseId}
+    </select>
+
+
+
+
+</mapper>

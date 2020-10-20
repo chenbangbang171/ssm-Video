@@ -1,14 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ssm-Video:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dcbf762c-ebb2-4239-b3ae-3c47f280e1d6" name="Default Changelist" comment="修改配置">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/pojo/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/SubjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/VideoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/mapper/CourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/mapper/SubjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/mapper/VideoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/service/SubjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/service/VideoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/service/impl/SubjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/video/service/impl/VideoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/video/mapper/CourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/video/mapper/SubjectMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/video/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/video/mapper/VideoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/controller/UserContoeller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/UserContoeller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/pojo/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/pojo/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/pojo/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/pojo/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/pojo/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/pojo/Video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/before/course.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/before/course.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/before/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/before/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/before/section.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/before/section.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Speaker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Video.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/ImageCut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/MailUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/MailUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/NavigationTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/StringUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,6 +92,13 @@
       </set>
     </option>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -28,7 +107,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1j5HJEoe3eisVTl5NGjsHKmwR7M" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,17 +117,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/com/video/mapper" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ssm-Video\src\main\resources\com\video\mapper" />
+      <recent name="D:\ssm-Video\target\ssm-Video-1.0-SNAPSHOT\js" />
       <recent name="D:\ssm-Video\src\main\webapp" />
       <recent name="D:\ssm-Video\src\main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.37">
     <configuration name="MailUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.video.utils.MailUtils" />
       <module name="ssm-Video" />
@@ -60,6 +144,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 9.0.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.37" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="ssm-Video:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ssm-Video" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52139" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ssm-Video:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MailUtils" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.37" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MailUtils" />
@@ -70,8 +232,19 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.04781421" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -88,7 +261,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603086958820</updated>
-      <workItem from="1603086962829" duration="4515000" />
+      <workItem from="1603086962829" duration="28086000" />
+      <workItem from="1603154040568" duration="6564000" />
+      <workItem from="1603161547149" duration="4107000" />
+      <workItem from="1603173628820" duration="4774000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1603088617064</created>
@@ -104,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603091304482</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改配置">
+      <created>1603091590961</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603091590961</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改配置">
+      <created>1603091635371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603091635371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,10 +306,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="修改配置" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1603091587766">
+    <state x="361" y="74" key="#Auto_Import" timestamp="1603157413092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603091587766" />
+    <state x="361" y="74" key="#Auto_Import/0.0.1536.824@0.0.1536.824" timestamp="1603157413092" />
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603093185313">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603093185313" />
+    <state x="517" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603095168348">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="517" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603095168348" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1603164452578">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603164452578" />
+    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603165377393">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1603165377393" />
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603164133564">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603164133564" />
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1603091768571">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603091768571" />
     <state x="549" y="156" key="FileChooserDialogImpl" timestamp="1603088430428">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -128,33 +342,69 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="637" y="308" width="273" height="208" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1603088422654" />
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1603088347991">
+    <state width="1393" height="393" key="GridCell.Tab.0.bottom" timestamp="1603176091121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603088347991" />
-    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1603088347990">
+    <state width="1393" height="393" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603176091121" />
+    <state width="1393" height="393" key="GridCell.Tab.0.center" timestamp="1603176091120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603088347990" />
-    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1603088347990">
+    <state width="1393" height="393" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603176091120" />
+    <state width="1393" height="393" key="GridCell.Tab.0.left" timestamp="1603176091120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603088347990" />
-    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1603088347990">
+    <state width="1393" height="393" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603176091120" />
+    <state width="1393" height="393" key="GridCell.Tab.0.right" timestamp="1603176091120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603088347990" />
+    <state width="1393" height="393" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603176091120" />
+    <state width="1393" height="393" key="GridCell.Tab.1.bottom" timestamp="1603176091121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1393" height="393" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603176091121" />
+    <state width="1393" height="393" key="GridCell.Tab.1.center" timestamp="1603176091121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1393" height="393" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603176091121" />
+    <state width="1393" height="393" key="GridCell.Tab.1.left" timestamp="1603176091121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1393" height="393" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603176091121" />
+    <state width="1393" height="393" key="GridCell.Tab.1.right" timestamp="1603176091121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1393" height="393" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603176091121" />
+    <state width="1393" height="393" key="GridCell.Tab.2.bottom" timestamp="1603176091121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1393" height="393" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603176091121" />
+    <state width="1393" height="393" key="GridCell.Tab.2.center" timestamp="1603176091121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1393" height="393" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603176091121" />
+    <state width="1393" height="393" key="GridCell.Tab.2.left" timestamp="1603176091121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1393" height="393" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603176091121" />
+    <state width="1393" height="393" key="GridCell.Tab.2.right" timestamp="1603176091121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1393" height="393" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603176091121" />
     <state x="299" y="70" key="Maven.ArtifactSearchDialog" timestamp="1603087326383">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603087326383" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603091517118">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603091639675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603091517118" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603091639675" />
     <state x="447" y="214" key="git4idea.merge.GitPullDialog" timestamp="1603091336833">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="214" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1603091336833" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603174011356">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603174011356" />
   </component>
 </project>

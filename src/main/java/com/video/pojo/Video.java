@@ -13,5 +13,6 @@ public class Video {
     private String  videoUrl;
     private String  videoImageUrl;
     private int  videoPlayNum;
+    private Speaker speaker;
 
 }

@@ -95,7 +95,7 @@
                     <c:forEach items="${subjectList}" var="subject">
                         <li>
                             <a target="_blank"
-                               href="${pageContext.request.contextPath}/course/course/${subject.id}">${subject.subjectName}</a>
+                               href="${pageContext.request.contextPath}/course/course/${subject.subId}">${subject.subName}</a>
                         </li>
                     </c:forEach>
                 </ul>
@@ -113,10 +113,10 @@
 <div id="app">
     <!--banner图-->
     <div class="banner"
-         style="background-image: url(${pageContext.request.contextPath}/img/banner-${subject.id}.jpg)"></div>
+         style="background-image: url(${pageContext.request.contextPath}/img/banner-${subject.subId}.jpg)"></div>
 
     <!--面包屑导航-->
-    <div class="container mian-nav">Web课 / ${subject.subjectName}</div>
+    <div class="container mian-nav">Web课 / ${subject.subName}</div>
 
     <div class="classify">
         <div class="container">
@@ -133,8 +133,8 @@
                     <ul>
                         <!--节-->
                         <c:forEach items="${course.videoList}" var="video" varStatus="i">
-                            <li class="section-main" onclick="getVideo(${video.id})">
-                                <div class="thum" style="background-image: url('${video.imageUrl}')">
+                            <li class="section-main" onclick="getVideo(${video.videoId})">
+                                <div class="thum" style="background-image: url('${video.videoImageUrl}')">
                                     <!--http://vod.chengjian100.com/gkk/h5/c1/image/course/01.jpg-->
                                 </div>
                                 <p>
@@ -143,13 +143,13 @@
                                     </c:if>
                                     <c:if test="${(i.index+1)<10}">
                                         0${i.index+1}
-                                    </c:if> ${video.title}</p>
+                                    </c:if> ${video.videoTitle}</p>
                                 <div class="classify-v-info">
                                     <span class="count" title="观看次数"><img
                                             src="${pageContext.request.contextPath}/img/count.png"
-                                            alt="">${video.playNum}</span>
+                                            alt="">${video.videoPlayNum}</span>
                                     <span class="duration" title="视频时长"><img
-                                            src="${pageContext.request.contextPath}/img/player.png" alt="">${video.time}</span>
+                                            src="${pageContext.request.contextPath}/img/player.png" alt="">${video.videoTime}</span>
                                 </div>
                             </li>
 
@@ -261,7 +261,7 @@
         //alert($("#isLogin").val());
         if ((null != "${sessionScope.userAccount}" && "${sessionScope.userAccount}" != "") || ($("#isLogin").val() == 1)) {
             //如果登录
-            location.href = "${pageContext.request.contextPath}/video/showVideo?videoId=" + videoId + "&subjectName=" + '${subject.subjectName}';
+            location.href = "${pageContext.request.contextPath}/video/showVideo?videoId=" + videoId + "&subName=" + '${subject.subName}';
         } else {
             //如果不登录，弹登录框
             $("#login").removeClass("hidden");
