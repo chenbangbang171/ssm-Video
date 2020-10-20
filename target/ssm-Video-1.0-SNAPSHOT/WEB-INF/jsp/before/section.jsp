@@ -30,7 +30,7 @@
             }
 
             //通过ajax更新播放次数
-            var params = {"id":"${video.id}", "playNum":"${video.playNum}"};
+            var params = {"id":"${video.videoId}", "playNum":"${video.videoPlayNum}"};
             $.post("${pageContext.request.contextPath}/video/updatePlayNum", params);
         });
     </script>
@@ -75,7 +75,7 @@
                     <c:forEach items="${subjectList}" var="subject">
                         <li>
                             <a target="_blank"
-                               href="${pageContext.request.contextPath}/course/course/${subject.id}">${subject.subjectName}</a>
+                               href="${pageContext.request.contextPath}/course/course/${subject.subId}">${subject.subName}</a>
                         </li>
                     </c:forEach>
                 </ul>
@@ -94,7 +94,7 @@
 
 <div>
     <!--面包屑导航-->
-    <div class="container mian-nav">公开课/${subjectName}</div>
+    <div class="container mian-nav">公开课/${subName}</div>
 
     <div class="intro">
         <div class="container">
@@ -102,18 +102,18 @@
                 <div class="left">
                     <video id="videoPlayer" src="${video.videoUrl}" class="video-js vjs-default-skin" controls
                            width="627" height="280"
-                           poster="${video.imageUrl}" data-setup="{}">
+                           poster="${video.videoImageUrl}" data-setup="{}">
                     </video>
                 </div>
 
                 <div class="right">
-                    <p class="right-title">${video.title}</p>
+                    <p class="right-title">${video.videoTitle}</p>
                     <div class="avatar">
                         <span style="background-image: url(${video.speaker.headImgUrl})"></span>
                         <p><b>讲师：${video.speaker.speakerName}</b><br><i>${video.speaker.speakerDesc}</i></p>
                     </div>
                     <p class="video-intro">
-                        <span>本节内容：</span> ${video.detail}
+                        <span>本节内容：</span> ${video.videoDetail}
                     </p>
                 </div>
             </div>
@@ -131,16 +131,16 @@
             <p class="title">目录</p>
 
             <c:forEach items="${course.videoList}" var="video">
-                <div class="chapter" onclick="load(${video.id})">
+                <div class="chapter" onclick="load(${video.videoId})">
                     <p class="biaoti"><a
-                            href="showVideo?videoId=${video.id}&subjectName=${subjectName}">${video.title}</a></p>
-                    <p class="lecturer">${video.detail}</p>
+                            href="showVideo?videoId=${video.videoId}&subjectName=${subjectName}">${video.videoTitle}</a></p>
+                    <p class="lecturer">${video.videoDetail}</p>
                     <p class="lecturer">讲师：${video.speaker.speakerName}</p>
                     <div class="v-info">
                         <span class="count"><img src="${pageContext.request.contextPath}/img/count.png"
-                                                 alt="">${video.playNum}</span>
+                                                 alt="">${video.videoPlayNum}</span>
                         <span class="duration"><img src="${pageContext.request.contextPath}/img/player.png"
-                                                    alt="">${video.time}</span>
+                                                    alt="">${video.videoTime}</span>
                     </div>
                 </div>
             </c:forEach>

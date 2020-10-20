@@ -17,13 +17,6 @@ public class UserContoeller {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("test")
-    @ResponseBody
-    public String test() {
-
-        return "test";
-    }
-
     @RequestMapping("insertUser")
     public String insertUser(HttpServletRequest request, HttpServletResponse response) {
 
@@ -63,11 +56,15 @@ public class UserContoeller {
         String password = request.getParameter("password");
         User user = userService.loginUser(email, password);
 //         return user != null ?  "success" : "failure";
-        if (user != null){
-            request.getSession(false).setAttribute("userAccount",user);
-            return "success";
-        }
-        return "failure";
+
+            if (user != null){
+                request.getSession(false).setAttribute("userAccount",user);
+                return "success";
+            }
+            return "failure";
+
+
+
     }
 
 }

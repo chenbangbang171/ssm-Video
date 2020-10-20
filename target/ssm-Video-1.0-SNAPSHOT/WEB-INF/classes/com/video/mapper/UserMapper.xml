@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.video.mapper.UserMapper">
 
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 该mapper.xml映射文件的唯一标识符 -->
+<mapper namespace="com.video.mapper.UserMapper">
 
     <resultMap id="user" type="com.video.pojo.User">
         <id property="userId" column="id"></id>
@@ -17,7 +19,6 @@
         <result property="UsercreateTime" column="createTime"></result>
     </resultMap>
 
-
     <insert id="insertUser" parameterType="com.video.pojo.User">
         insert into user(email,password) values(#{email},#{password})
     </insert>
@@ -27,12 +28,9 @@
     </select>
 
 
-
-
     <select id="loginUser" resultMap="user">
         select * from user where email = #{email} and password = #{pwd}
     </select>
-
 
 
 

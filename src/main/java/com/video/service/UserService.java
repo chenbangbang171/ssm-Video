@@ -9,4 +9,5 @@ public interface UserService {
     String selectByEmail(String email);
 
     User loginUser(String email, String pwd);
+
 }
