@@ -1,9 +1,13 @@
 package com.video.service;
 
 import com.video.pojo.User;
-import org.springframework.stereotype.Service;
-
 
 public interface UserService {
-    User loginUser(String email,String pwd);
+
+    Integer insertUser(String email, String password);
+
+    String selectByEmail(String email);
+
+    User loginUser(String email, String pwd);
+
 }

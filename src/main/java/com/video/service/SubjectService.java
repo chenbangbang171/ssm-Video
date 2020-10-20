@@ -8,4 +8,5 @@ public interface SubjectService {
         List<Subject> queryAllSubject();
 
         Subject querySubjectById(int SubId);
+
 }
