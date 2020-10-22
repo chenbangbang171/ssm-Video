@@ -49,7 +49,7 @@ public class UserContoeller {
         String test = request.getParameter("email");
 
         String byEmail = userService.selectByEmail(test);
-
+        System.out.println();
         if (byEmail != null && byEmail != "") {
             return "error";
         }
