@@ -1,4 +1,4 @@
-package com.video.service.Impl;
+package com.video.service.impl;
 
 import com.video.mapper.UserMapper;
 import com.video.pojo.User;
@@ -14,8 +14,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Integer insertUser(String email, String password) {
-        System.out.println("e:" + email);
-        System.out.println("p:" + password);
         return userMapper.insertUser(email, password);
     }
 

@@ -50,4 +50,35 @@
     </select>
 
 
+    <delete id="deleteVideoById">
+        delete from video where id = #{videoId}
+    </delete>
+
+    <delete id="deleteVideos" parameterType="Object[]">
+        delete  from video
+        <where>
+            <if test="array  != null and array.length > 0">
+                <foreach collection="array" open="id in (" close=")" item="id" separator=",">
+                    #{id}
+                </foreach>
+            </if>
+        </where>
+    </delete>
+
+    <insert id="addVideo" parameterType="com.video.pojo.Video">
+        insert  into video values(
+                        #{videoId},#{videoTitle},#{videoDetail},
+                        #{videoTime},#{videoSpeakerId},#{videoCourseId},
+                        #{videoUrl},#{videoImageUrl},#{videoPlayNum}
+                                        )
+    </insert>
+
+    <update id="updateVideo" parameterType="com.video.pojo.Video">
+        update video set  title=#{videoTitle},detail=#{videoDetail},time=#{videoTime},
+                            speaker_id=#{videoSpeakerId},course_id=#{videoCourseId},
+                             video_url= #{videoUrl},image_url=#{videoImageUrl},play_num=#{videoPlayNum}
+                  where id = #{videoId}
+    </update>
+
+
 </mapper>

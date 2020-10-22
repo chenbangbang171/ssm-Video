@@ -11,4 +11,13 @@ public interface VideoService {
 
     List<Video> queryAllVideo(QueryVoVideo queryVo);
 
+    void deleteVideoById(int videoId);
+
+    void deleteVideos(String[] ids);
+
+    void addVideo(Video video);
+
+    void updateVideo(Video video);
+
+
 }

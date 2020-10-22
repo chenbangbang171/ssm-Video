@@ -8,4 +8,10 @@ import java.util.List;
 @Repository
 public interface SpeakerMapper {
     List<Speaker> queryAllSpeaker();
+    void deleteSpeakerById(int id);
+    Speaker querySpeakerById(int id);
+
+    void updateSpeakerById(Speaker speaker);
+
+    void addSpeaker(Speaker speaker);
 }

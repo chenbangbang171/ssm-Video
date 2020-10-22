@@ -24,4 +24,24 @@ public class VideoServiceImpl implements VideoService {
     public List<Video> queryAllVideo(QueryVoVideo queryVo) {
         return videoMapper.queryAllVideo(queryVo);
     }
+
+    @Override
+    public void deleteVideoById(int videoId) {
+        videoMapper.deleteVideoById(videoId);
+    }
+
+    @Override
+    public void deleteVideos(String[] ids) {
+        videoMapper.deleteVideos(ids);
+    }
+
+    @Override
+    public void addVideo(Video video) {
+        videoMapper.addVideo(video);
+    }
+
+    @Override
+    public void updateVideo(Video video) {
+        videoMapper.updateVideo(video);
+    }
 }

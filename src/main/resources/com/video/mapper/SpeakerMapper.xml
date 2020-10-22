@@ -17,6 +17,23 @@
         select id,speaker_name,speaker_desc,speaker_job,head_img_url from speaker
     </select>
 
+    <delete id="deleteSpeakerById">
+        delete  from speaker where id = #{id}
+    </delete>
+
+    <select id="querySpeakerById" resultMap="speaker">
+        select id,speaker_name,speaker_desc,speaker_job,head_img_url from speaker  where id = #{id}
+    </select>
 
 
+    <update id="updateSpeakerById" parameterType="com.video.pojo.Speaker">
+        update speaker set speaker_name = #{speakerName},speaker_desc=#{speakerDesc},speaker_job=#{speakerJob}
+         where id = #{speakerId}
+    </update>
+
+    <insert id="addSpeaker" parameterType="com.video.pojo.Speaker">
+        insert into speaker values (
+                #{speakerId},#{speakerName},#{speakerDesc},#{speakerJob},#{headImgUrl}
+        )
+    </insert>
 </mapper>

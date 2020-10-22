@@ -79,6 +79,7 @@
             if ($("#currentPage").html() == ${pageInfo.navigateLastPage}-1) {
                 $("#getpage\\+2").attr("style", "display:none");
             }
+
         }
         function showAddPage() {
             location.href = "${pageContext.request.contextPath}/video/addVideo";
@@ -87,6 +88,16 @@
         $(function () {
             $("#btn").click(function () {
                 if (deleteNum > 0) {
+
+                    var arr = document.getElementsByName("ids");
+                    var checkedArr = "";
+                    for (var i = 0; i < arr.length; i++) {
+                        if (arr[i].checked ){
+                            checkedArr += arr[i].value + ",";
+                        }
+                    }
+
+                    document.getElementById("checkedArr").value = checkedArr;
 
                     Confirm.show('溫馨提示', '您確定要刪除这' + deleteNum + '条记录嗎？', {
                         'Delete': {
@@ -159,6 +170,8 @@
 
             $("#delNum").text(deleteNum);
 
+
+
         }
 
         function selectOne(obj) {
@@ -214,7 +227,7 @@
 
             </ul>
             <p class="navbar-text navbar-right">
-                <span>${sessionScope.userName}</span> <i class="glyphicon glyphicon-log-in"
+                <span>${sessionScope.amdin.admUserName}</span> <i class="glyphicon glyphicon-log-in"
                                                          aria-hidden="true"></i>&nbsp;&nbsp;<a
                     href="${pageContext.request.contextPath}/admin/exit"
                     class="navbar-link">退出</a>
@@ -324,7 +337,9 @@
             <thead>
             <tr class="active">
                 <th style="width:3%"><input type="checkbox" onclick="selectAll(this)"
-                                            id="checkAllId"/></th>
+                                            id="checkAllId"/>
+                    <input type="hidden" value="" id="checkedArr" name="checkedArr">
+                </th>
                 <th style="width:5%">序号</th>
                 <th style="width:15%">名称</th>
                 <th style="width:42%;">介绍</th>
@@ -339,7 +354,9 @@
             <c:forEach items="${pageInfo.list}" var="video" varStatus="status">
                 <tr>
                     <td><input type="checkbox" name="ids" value="${video.videoId}"
-                               onclick="selectOne(this)"/></td>
+                               onclick="selectOne(this)"/>
+
+                    </td>
                     <td>${status.count}</td>
                     <td>${video.videoTitle}</td>
                     <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">${video.videoDetail}</td>

@@ -67,7 +67,7 @@
 
         //页面加载完毕之后就执行以下代码片段
         $(function () {
-            var speakerId = '${video.speakerId}';
+            var speakerId = '${video.videoSpeakerId}';
             $("#selectSpeaker li").each(function () {
 
                 if ($(this).val() == speakerId) {
@@ -75,7 +75,7 @@
                 }
             });
 
-            var courseId = '${video.courseId}';
+            var courseId = '${video.videoCourseId}';
             $("#selectCourse li").each(function () {
 
                 if ($(this).val() == courseId) {
@@ -127,11 +127,11 @@
     <div class="container">
 
         <%-- <c:if test="empty ${video.id}"> --%>
-        <c:if test="${empty video.id}">
+        <c:if test="${empty video.videoId}">
             <h2>添加视频信息</h2>
         </c:if>
 
-        <c:if test="${not empty video.id}">
+        <c:if test="${not empty video.videoId}">
             <h2>修改视频信息</h2>
         </c:if>
 
@@ -144,14 +144,14 @@
     <form class="form-horizontal" action="${pageContext.request.contextPath}/video/saveOrUpdate" method="post">
 
 
-        <c:if test="${not empty video.id}">
-            <input type="hidden" name="id" value="${video.id}">
+        <c:if test="${not empty video.videoId}">
+            <input type="hidden" name="videoId" value="${video.videoId}">
         </c:if>
 
         <div class="form-group">
             <label class="col-sm-2 control-label">名称</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="title" value="${video.title}" placeholder="视频名称">
+                <input type="text" class="form-control" name="videoTitle" value="${video.videoTitle}" placeholder="视频名称">
             </div>
         </div>
 
@@ -164,8 +164,8 @@
                                 aria-haspopup="true" aria-expanded="false">下拉菜单<span class="caret"></span></button>
                         <ul id="selectSpeaker" class="dropdown-menu">
                             <c:forEach items="${speakerList}" var="speaker">
-                                <li value='${speaker.id}'><a href="#"
-                                                             onclick="showName(this,'${speaker.id}',1)">${speaker.speakerName}</a>
+                                <li value='${speaker.speakerId}'><a href="#"
+                                                             onclick="showName(this,'${speaker.speakerId}',1)">${speaker.speakerName}</a>
                                 </li>
                             </c:forEach>
                             <!-- <li ><a href="#" onclick="showName(this,1,1)">闫振伟</a></li>
@@ -173,12 +173,12 @@
                             <li ><a href="#" onclick="showName(this,3,1)">石军培</a></li>  -->
                         </ul>
                     </div><!-- /btn-group -->
-                    <c:if test="${empty video.speakerId}">
-                        <input type="hidden" class="form-control" id="speakerId" name="speakerId" value="0">
+                    <c:if test="${empty video.videoSpeakerId}">
+                        <input type="hidden" class="form-control" id="speakerId" name="videoSpeakerId" value="0">
                     </c:if>
-                    <c:if test="${not empty video.speakerId}">
-                        <input type="hidden" class="form-control" id="speakerId" name="speakerId"
-                               value="${video.speakerId}">
+                    <c:if test="${not empty video.videoSpeakerId}">
+                        <input type="hidden" class="form-control" id="speakerId" name="videoSpeakerId"
+                               value="${video.videoSpeakerId}">
                     </c:if>
                     <input type="text" class="form-control" disabled id="speakerName" aria-label="...">
                 </div><!-- /input-group -->
@@ -194,18 +194,18 @@
                                 aria-haspopup="true" aria-expanded="false">下拉菜单<span class="caret"></span></button>
                         <ul id="selectCourse" class="dropdown-menu">
                             <c:forEach items="${courseList}" var="course">
-                                <li value="${course.id}"><a href="#"
-                                                            onclick="showName(this,${course.id},2)">${course.courseTitle}</a>
+                                <li value="${course.courseId}"><a href="#"
+                                                            onclick="showName(this,${course.courseId},2)">${course.courseTitle}</a>
                                 </li>
                             </c:forEach>
 
                         </ul>
                     </div><!-- /btn-group -->
-                    <c:if test="${empty video.courseId}">
-                        <input type="hidden" class="form-control" id="courseId" name="courseId" value="0">
+                    <c:if test="${empty video.videoCourseId}">
+                        <input type="hidden" class="form-control" id="courseId" name="videoCourseId" value="0">
                     </c:if>
-                    <c:if test="${not empty video.courseId}">
-                        <input type="hidden" class="form-control" id="courseId" name="courseId" value="${video.courseId}">
+                    <c:if test="${not empty video.videoCourseId}">
+                        <input type="hidden" class="form-control" id="courseId" name="videoCourseId" value="${video.videoCourseId}">
                     </c:if>
                     <input type="text" class="form-control" disabled id="courseName" aria-label="...">
                 </div><!-- /input-group -->
@@ -215,11 +215,11 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">时长</label>
             <div class="col-sm-10">
-                <c:if test="${empty video.time}">
-                    <input type="number" class="form-control" value="0" name="time" placeholder="精确到毫秒（正整数）">
+                <c:if test="${empty video.videoTime}">
+                    <input type="number" class="form-control" value="0" name="videoTime" placeholder="精确到毫秒（正整数）">
                 </c:if>
-                <c:if test="${not empty video.time}">
-                    <input type="number" class="form-control" value="${video.time}" name="time"
+                <c:if test="${not empty video.videoTime}">
+                    <input type="number" class="form-control" value="${video.videoTime}" name="videoTime"
                            placeholder="精确到毫秒（正整数）">
                 </c:if>
             </div>
@@ -228,7 +228,7 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">封面图片地址</label>
             <div class="col-sm-10">
-                <input type="url" name="imageUrl" class="form-control" value="${video.imageUrl}" placeholder="具体的url">
+                <input type="url" name="videoImageUrl" class="form-control" value="${video.videoImageUrl}" placeholder="具体的url">
             </div>
         </div>
 
@@ -242,7 +242,7 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">备注</label>
             <div class="col-sm-10">
-                <textarea class="form-control" name="detail" rows="3">${video.detail}</textarea>
+                <textarea class="form-control" name="videoDetail" rows="3">${video.videoDetail}</textarea>
             </div>
         </div>
 

@@ -116,7 +116,7 @@
 
             </ul>
             <p class="navbar-text navbar-right">
-                <span>${sessionScope.userName}</span> <i class="glyphicon glyphicon-log-in"
+                <span>${sessionScope.admin.adminName}</span> <i class="glyphicon glyphicon-log-in"
                                                          aria-hidden="true"></i>&nbsp;&nbsp;<a
                     href="${pageContext.request.contextPath}/admin/exit"
                     class="navbar-link">退出</a>
@@ -133,11 +133,11 @@
     <div class="container">
 
         <%-- <c:if test="empty ${video.id}"> --%>
-        <c:if test="${empty speaker.id}">
+        <c:if test="${empty speaker.speakerId}">
             <h2>添加主讲人信息</h2>
         </c:if>
 
-        <c:if test="${not empty speaker.id}">
+        <c:if test="${not empty speaker.speakerId}">
             <h2>修改主讲人信息</h2>
         </c:if>
 
@@ -150,8 +150,8 @@
     <form class="form-horizontal" action="${pageContext.request.contextPath}/speaker/saveOrUpdate" method="post">
 
 
-        <c:if test="${not empty speaker.id}">
-            <input type="hidden" name="id" value="${speaker.id}">
+        <c:if test="${not empty speaker.speakerId}">
+            <input type="hidden" name="id" value="${speaker.speakerId}">
         </c:if>
 
         <div class="form-group">

@@ -32,7 +32,8 @@
     </select>
 
     <select id="querySubjectById" resultMap="subjects">
-   select s.id,s.subject_name,x.courseId,x.course_title,x.course_desc,x.subject_id,x.videoId,x.title,x.detail,
+   select s.id,s.subject_name,
+            x.courseId,x.course_title,x.course_desc,x.subject_id,x.videoId,x.title,x.detail,
             x.time,x.speaker_id,x.course_id,x.video_url,x.image_url,x.play_num
             from subject s, (select c.id courseId ,c.course_title,c.course_desc,c.subject_id,v.id videoId,v.title,v.detail,v.time,
                                     v.speaker_id,v.course_id,v.video_url,v.image_url,v.play_num

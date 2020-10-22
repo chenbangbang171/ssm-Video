@@ -24,8 +24,30 @@
     <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/confirm.js"></script>
     <script type="text/javascript">
+
+        window.onload = function () {
+            $("#currentPage").attr("style", "color:red");
+            <%--if ( <%=personPageInfo.getPageNum()%> = 1){currentPage--%>
+            if ($("#currentPage").html() == 1) {
+                $("#getpage-1").attr("style", "display:none");
+            }
+
+
+
+            // 最后一页
+            if ($("#currentPage").html() == ${pageInfo.navigateLastPage}) {
+                $("#getpage\\+1").attr("style", "display:none");
+            }
+
+
+        }
         function showAddPage() {
             location.href = "${pageContext.request.contextPath}/speaker/addSpeaker";
+        }
+
+        function queryBooks(pageNum) {
+            $("#pageNum").val(pageNum);
+            $("#queryForm").submit();
         }
 
         function delSpeakerById(Obj, id, name) {
@@ -35,7 +57,10 @@
                     'primary': true,
                     'callback': function () {
                         var param = {"id": id};
-                        $.post("speakerDel", param, function (data) {
+                        $.post(
+                            "/speaker/deleteSpeakerById",
+                            param,
+                            function (data) {
                             if (data == 'success') {
                                 Confirm.show('温馨提示：', '删除成功');
                                 $(Obj).parent().parent().remove();
@@ -51,6 +76,16 @@
     <style type="text/css">
         th {
             text-align: center;
+        }
+
+        .bottomBar p{
+            display: inline-block;
+            float: left;
+            margin-left: 10px;
+        }
+
+        #bottomDivBar{
+            float: right;
         }
     </style>
 </head>
@@ -74,7 +109,7 @@
 
             </ul>
             <p class="navbar-text navbar-right">
-                <span>${sessionScope.userName}</span> <i class="glyphicon glyphicon-log-in"
+                <span>${sessionScope.admin.admUserName}</span> <i class="glyphicon glyphicon-log-in"
                                                          aria-hidden="true"></i>&nbsp;&nbsp;<a
                     href="${pageContext.request.contextPath}/admin/exit"
                     class="navbar-link">退出</a>
@@ -105,9 +140,10 @@
 </div>
 
 <div class="container" style="margin-top: 20px;">
+<table class="table table-bordered table-hover"
+       style="text-align: center;table-layout:fixed;">
 
-    <table class="table table-bordered table-hover"
-           style="text-align: center;table-layout:fixed;">
+    <form  id="queryForm" action="${pageContext.request.contextPath}/speaker/showSpeakerList" >
         <thead>
         <tr class="active">
             <th>序号</th>
@@ -119,16 +155,19 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach items="${page.rows}" var="speaker" varStatus="status">
+        <c:forEach items="${pageInfo.list}" var="speaker" varStatus="status">
             <tr>
                 <td>${status.index+1}</td>
                 <td>${speaker.speakerName}</td>
 
+                <!-- 设置隐藏域 传递当前页码 -->
+                <input type="hidden" name="pageNum" id="pageNum" value="1">
+
                 <td>${speaker.speakerJob}</td>
                 <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">${speaker.speakerDesc}</td>
-                <td><a href="${pageContext.request.contextPath}/speaker/edit?id=${speaker.id}"><span
+                <td><a href="${pageContext.request.contextPath}/speaker/edit?id=${speaker.speakerId}"><span
                         class="glyphicon glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
-                <td><a href="#" onclick="return delSpeakerById(this,'${speaker.id}','${speaker.speakerName}')"><span
+                <td><a href="#" onclick="return delSpeakerById(this,'${speaker.speakerId}','${speaker.speakerName}')"><span
                         class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
             </tr>
 
@@ -136,11 +175,19 @@
 
 
         </tbody>
-    </table>
+    </form>
+
+</table>
 </div>
-<div class="container">
-    <div class="navbar-right" style="padding-right: 17px">
-        <p:page url="${pageContext.request.contextPath}/speaker/showSpeakerList"></p:page>
+<div class="container" id="bottomDivBar">
+    <div class="bottomBar" style="padding-right: 17px">
+        <p href="javascript:void(0)" onclick="queryBooks(1)">首页</p>
+        <p href="javascript:void(0)" onclick="queryBooks(${pageInfo.prePage})">上一页</p>
+        <p href="javascript:void(0)" id="getpage-1" style="" onclick="queryBooks(${pageInfo.pageNum-1})">${pageInfo.pageNum-1}</p>
+        <p href="javascript:void(0)" id="currentPage" onclick="queryBooks(${pageInfo.pageNum})">${pageInfo.pageNum}</p>
+        <p href="javascript:void(0)" id="getpage+1"style="" onclick="queryBooks(${pageInfo.pageNum+1})">${pageInfo.pageNum+1}</p>
+        <p href="javascript:void(0)" onclick="queryBooks(${pageInfo.nextPage})">下一页</p>
+        <p href="javascript:void(0)" onclick="queryBooks(${pageInfo.navigateLastPage})">尾页</p>
     </div>
 </div>
 </body>

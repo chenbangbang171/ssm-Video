@@ -16,4 +16,26 @@ public class SpeakerServiceImpl implements SpeakerService {
     public List<Speaker> queryAllSpeaker() {
         return speakerMapper.queryAllSpeaker();
     }
+
+    @Override
+    public void deleteSpeakerById(int id) {
+        speakerMapper.deleteSpeakerById(id);
+    }
+
+    @Override
+    public Speaker querySpeakerById(int id) {
+        return speakerMapper.querySpeakerById(id);
+    }
+
+    @Override
+    public void updateSpeakerById(Speaker speaker) {
+        speakerMapper.updateSpeakerById(speaker);
+    }
+
+    @Override
+    public void addSpeaker(Speaker speaker) {
+        speakerMapper.addSpeaker(speaker);
+    }
+
+
 }

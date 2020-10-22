@@ -10,4 +10,12 @@ import java.util.List;
 public interface VideoMapper {
         Video getVideoById(int videoId);
         List<Video> queryAllVideo( QueryVoVideo queryVo);
+
+        void deleteVideoById(int videoId);
+
+        void deleteVideos(String[] ids);
+
+        void addVideo(Video video);
+
+        void updateVideo(Video video);
 }
