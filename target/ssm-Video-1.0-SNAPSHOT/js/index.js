@@ -211,20 +211,12 @@ function commitRegForm() {
 verifyCode = new GVerify("v_container");
 
 function commitLogin() {
-<<<<<<< HEAD
     //alert("login");
-=======
-    // alert("login");
->>>>>>> fd3cdf355a4af8f361de2f6258256b2647d52e76
     var email = $("#loginEmail").val();
     var password = $("#loginPassword").val();
     if (null != email && email != "" && null != password && password != "") {
         var params = $("#loginForm").serialize();
-<<<<<<< HEAD
         //alert(params);
-=======
-        // alert(params);
->>>>>>> fd3cdf355a4af8f361de2f6258256b2647d52e76
         // post要小写
         $.post(
             "/user/loginUser",

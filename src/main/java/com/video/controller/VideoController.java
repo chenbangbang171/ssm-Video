@@ -38,7 +38,12 @@ public class VideoController {
     @Autowired
     private SpeakerService speakerService;
 
-
+    /**
+     * 前台展示视频
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("showVideo")
     public ModelAndView getVideo(HttpServletRequest request, HttpServletResponse response) {
         String videoId = request.getParameter("videoId");
@@ -56,6 +61,14 @@ public class VideoController {
         return modelAndView;
     }
 
+    /**
+     * 视频列表
+     * @param pageNum
+     * @param pageSize
+     * @param modelAndView
+     * @param queryVo
+     * @return
+     */
     @RequestMapping("list")
     public ModelAndView getVideoList(@RequestParam(defaultValue = "1", required = false) Integer pageNum,
                                      @RequestParam(defaultValue = "10", required = false) Integer pageSize,
@@ -75,6 +88,11 @@ public class VideoController {
         return modelAndView;
     }
 
+    /**
+     * 删除视频
+     * @param request
+     * @return
+     */
     @RequestMapping("videoDel")
     public String videoDel(HttpServletRequest request) {
         String id = request.getParameter("id");
@@ -82,7 +100,12 @@ public class VideoController {
         return "success";
     }
 
-
+    /**
+     * 删除多个视频
+     * @param request
+     * @param response
+     * @throws IOException
+     */
     @RequestMapping("delBatchVideos")
     public void delBatchVideos(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String checkedArr = request.getParameter("checkedArr");
@@ -91,7 +114,12 @@ public class VideoController {
         response.sendRedirect("/video/list");
     }
 
-
+    /**
+     * 添加视频
+     * @param modelAndView
+     * @return
+     * @throws IOException
+     */
     @RequestMapping("addVideo")
     public ModelAndView addVideo(ModelAndView modelAndView) throws IOException {
         List<Speaker> speakerList = speakerService.queryAllSpeaker();
@@ -103,7 +131,13 @@ public class VideoController {
         return modelAndView;
     }
 
-
+    /**
+     * 添加或修改视频
+     * @param request
+     * @param video
+     * @param response
+     * @throws IOException
+     */
     @RequestMapping("saveOrUpdate")
     public void saveOrUpdate(HttpServletRequest request, Video video, HttpServletResponse response) throws IOException {
         String id = request.getParameter("videoId");
@@ -119,6 +153,12 @@ public class VideoController {
     }
 
 
+    /**
+     * 编辑视频
+     * @param request
+     * @param modelAndView
+     * @return
+     */
     @RequestMapping("edit")
     public ModelAndView edit(HttpServletRequest request, ModelAndView modelAndView) {
         String id = request.getParameter("id");

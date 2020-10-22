@@ -6,336 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcbf762c-ebb2-4239-b3ae-3c47f280e1d6" name="Default Changelist" comment="项目完结">
+    <list default="true" id="dcbf762c-ebb2-4239-b3ae-3c47f280e1d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/controller/SpeakerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/SpeakerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/SubjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/video/controller/UserContoeller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/UserContoeller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/video/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/controller/VideoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/service/Impl/SpeakerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/service/Impl/SpeakerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/service/impl/SubjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/video/service/impl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/video/service/impl/VideoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/before/section.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/before/section.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/before/success.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/behind/videoList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/behind/videoList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/controller/CourseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/controller/SpeakerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/controller/SubjectController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/controller/UserContoeller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/controller/VideoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/AdminMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/AdminMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/CourseMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/CourseMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/SpeakerMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/SpeakerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/SubjectMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/SubjectMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/VideoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/mapper/VideoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/QueryVoVideo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Speaker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/pojo/Video.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/AdminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/CourseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/Impl/AdminServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/Impl/CourseServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/Impl/SpeakerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/Impl/SubjectServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/Impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/Impl/VideoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/SpeakerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/SubjectService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/service/VideoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/ImageCut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/MailUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/MailUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/NavigationTag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/Page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/video/utils/StringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/CourseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/SpeakerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/SubjectController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/UserContoeller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/VideoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/AdminMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/AdminMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/CourseMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/CourseMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/SpeakerMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/SpeakerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/SubjectMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/SubjectMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/VideoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/mapper/VideoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/pojo/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/pojo/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/pojo/QueryVoVideo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/pojo/Speaker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/pojo/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/pojo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/pojo/Video.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/AdminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/CourseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/Impl/AdminServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/Impl/CourseServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/Impl/SpeakerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/Impl/SubjectServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/Impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/Impl/VideoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/SpeakerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/SubjectService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/service/VideoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/utils/ImageCut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/utils/MailUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/utils/MailUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/utils/NavigationTag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/utils/Page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/utils/StringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/log4j2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/springmvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/404.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/change_avatar.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/change_profile.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/course.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/forget_password.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/my_profile.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/password_safe.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/reset_password.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/section.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/before/success.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/behind/addSpeaker.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/behind/addVideo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/behind/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/behind/speakerList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/behind/videoList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/jsp/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/HikariCP-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/aspectjrt-1.5.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.9.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp2-2.8.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/druid-1.1.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.26.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.13.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/log4j-core-2.13.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/lombok-1.18.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/mybatis-plus-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/mybatis-plus-annotation-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/mybatis-plus-boot-starter-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/mybatis-plus-core-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/mybatis-plus-extension-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-2.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-5.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-2.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.2.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-dao-2.0.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.2.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/standard-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/lib/tomcat-servlet-api-9.0.37.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/tld/commons.tld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/._base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/._css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/._font" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/._forget_password.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/._jquery.Jcrop.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/._profile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/._video-js.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/demo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/font/._vjs.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/font/._vjs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/font/._vjs.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/font/._vjs.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/font/vjs.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/font/vjs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/font/vjs.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/font/vjs.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/forget_password.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/jquery.Jcrop.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/profile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/css/video-js.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/images/error.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/android.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/avatar_lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/banner-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/banner-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/banner-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/banner-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/banner-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/banner-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/bigdata.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/count.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/error.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/footer1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/footer2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/footer3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/footer4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/footer_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/hl_scroll_left1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/html5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/java.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/left-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/nav_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/nav_down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/password.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/php.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/python.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/qidai.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/right-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/sc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/teacher-wjh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/tele.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/thumb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/ui.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/we.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/yzm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/微信公众号.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/img/微博公众号.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._Jcrop_upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._axios.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._jquery-1.8.3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._jquery.Jcrop.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._jquery.cityselect.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._mobile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._readmore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._vue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._vueCourse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/._vueSection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/Jcrop_upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/axios.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/confirm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/gVerify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/jquery-1.12.4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/jquery-1.8.3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/jquery-1.8.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/jquery.Jcrop.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/jquery.cityselect.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/mobile/._layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/mobile/._need" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/mobile/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/mobile/need/._layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/mobile/need/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/readmore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/._default" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/._icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/._icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/._layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/._loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/._loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/._loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/skin/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/vue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/vueCourse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/vueSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/controller/UserContoeller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/video/controller/UserContoeller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/video/controller/VideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/video/controller/VideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/UserContoeller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/UserContoeller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/VideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/WEB-INF/classes/com/video/controller/VideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-Video-1.0-SNAPSHOT/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -653,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603333512676</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="项目完结1">
+      <created>1603349402597</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603349402597</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +352,8 @@
     <MESSAGE value="第二天，陈祖建 视频查询观看完成" />
     <MESSAGE value="2" />
     <MESSAGE value="项目完结" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目完结" />
+    <MESSAGE value="项目完结1" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目完结1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#Auto_Import" timestamp="1603157413092">
@@ -717,11 +405,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603283939451" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1603348597973">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1603349400313">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603327789897" />
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1603348597973" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1603349400313" />
     <state x="549" y="158" key="FileChooserDialogImpl" timestamp="1603334245735">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -735,66 +423,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="637" y="308" width="273" height="208" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1603088422654" />
-    <state width="1266" height="232" key="GridCell.Tab.0.bottom" timestamp="1603349345960">
+    <state width="1266" height="203" key="GridCell.Tab.0.bottom" timestamp="1603351308250">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603327769106" />
-    <state width="1266" height="232" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603349345960" />
-    <state width="1266" height="232" key="GridCell.Tab.0.center" timestamp="1603349345960">
+    <state width="1266" height="203" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603351308250" />
+    <state width="1266" height="203" key="GridCell.Tab.0.center" timestamp="1603351308250">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603327769105" />
-    <state width="1266" height="232" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1603349345960" />
-    <state width="1266" height="232" key="GridCell.Tab.0.left" timestamp="1603349345959">
+    <state width="1266" height="203" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1603351308250" />
+    <state width="1266" height="203" key="GridCell.Tab.0.left" timestamp="1603351308249">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603327769105" />
-    <state width="1266" height="232" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1603349345959" />
-    <state width="1266" height="232" key="GridCell.Tab.0.right" timestamp="1603349345960">
+    <state width="1266" height="203" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1603351308249" />
+    <state width="1266" height="203" key="GridCell.Tab.0.right" timestamp="1603351308250">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603327769106" />
-    <state width="1266" height="232" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1603349345960" />
-    <state width="1266" height="232" key="GridCell.Tab.1.bottom" timestamp="1603349345960">
+    <state width="1266" height="203" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1603351308250" />
+    <state width="1266" height="203" key="GridCell.Tab.1.bottom" timestamp="1603351308254">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603327769107" />
-    <state width="1266" height="232" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603349345960" />
-    <state width="1266" height="232" key="GridCell.Tab.1.center" timestamp="1603349345960">
+    <state width="1266" height="203" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603351308254" />
+    <state width="1266" height="203" key="GridCell.Tab.1.center" timestamp="1603351308252">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603327769106" />
-    <state width="1266" height="232" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1603349345960" />
-    <state width="1266" height="232" key="GridCell.Tab.1.left" timestamp="1603349345960">
+    <state width="1266" height="203" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1603351308252" />
+    <state width="1266" height="203" key="GridCell.Tab.1.left" timestamp="1603351308251">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603327769106" />
-    <state width="1266" height="232" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1603349345960" />
-    <state width="1266" height="232" key="GridCell.Tab.1.right" timestamp="1603349345960">
+    <state width="1266" height="203" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1603351308251" />
+    <state width="1266" height="203" key="GridCell.Tab.1.right" timestamp="1603351308252">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603327769106" />
-    <state width="1266" height="232" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1603349345960" />
-    <state width="1266" height="232" key="GridCell.Tab.2.bottom" timestamp="1603349345961">
+    <state width="1266" height="203" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1603351308252" />
+    <state width="1266" height="203" key="GridCell.Tab.2.bottom" timestamp="1603351308254">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603327769106" />
-    <state width="1266" height="232" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603349345961" />
-    <state width="1266" height="232" key="GridCell.Tab.2.center" timestamp="1603349345961">
+    <state width="1266" height="203" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603351308254" />
+    <state width="1266" height="203" key="GridCell.Tab.2.center" timestamp="1603351308254">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603327769106" />
-    <state width="1266" height="232" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1603349345961" />
-    <state width="1266" height="232" key="GridCell.Tab.2.left" timestamp="1603349345961">
+    <state width="1266" height="203" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1603351308254" />
+    <state width="1266" height="203" key="GridCell.Tab.2.left" timestamp="1603351308254">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603327769106" />
-    <state width="1266" height="232" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1603349345961" />
-    <state width="1266" height="232" key="GridCell.Tab.2.right" timestamp="1603349345961">
+    <state width="1266" height="203" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1603351308254" />
+    <state width="1266" height="203" key="GridCell.Tab.2.right" timestamp="1603351308254">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1393" height="43" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603327769106" />
-    <state width="1266" height="232" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1603349345961" />
+    <state width="1266" height="203" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1603351308254" />
     <state width="1266" height="504" key="GridCell.Tab.5.bottom" timestamp="1603328896488">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -861,10 +549,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603266542158" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1603348091421">
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup" timestamp="1603350996922">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603262187894" />
-    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603348091421" />
+    <state x="431" y="147" width="672" height="687" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603350996922" />
   </component>
 </project>

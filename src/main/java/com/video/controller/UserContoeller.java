@@ -167,6 +167,13 @@ public class UserContoeller {
         return modelAndView;
     }
 
+    /**
+     * 修改个人信息
+     * @param request
+     * @param response
+     * @param modelAndView
+     * @return
+     */
     @RequestMapping("updateUser")
     public ModelAndView updateUser(HttpServletRequest request, HttpServletResponse response, ModelAndView modelAndView) {
 
@@ -190,6 +197,13 @@ public class UserContoeller {
         return modelAndView;
     }
 
+    /**
+     * 修改头像
+     * @param modelAndView
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("changeAvatar")
     public ModelAndView changeAvatar(ModelAndView modelAndView, HttpServletRequest request, HttpServletResponse response) {
 
@@ -204,6 +218,14 @@ public class UserContoeller {
         return modelAndView;
     }
 
+    /**
+     * 更新头像
+     * @param image_file
+     * @param modelAndView
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("upLoadImage")
     public ModelAndView upLoadImage(MultipartFile image_file, ModelAndView modelAndView, HttpServletRequest request, HttpServletResponse response) {
 
@@ -235,6 +257,12 @@ public class UserContoeller {
         return modelAndView;
     }
 
+    /**
+     * 跳转修改密码
+     * @param request
+     * @param modelAndView
+     * @return
+     */
     @RequestMapping("passwordSafe")
     public ModelAndView passwordSafe(HttpServletRequest request, ModelAndView modelAndView) {
         String email = (String) request.getSession().getAttribute("email");
@@ -247,6 +275,12 @@ public class UserContoeller {
         return modelAndView;
     }
 
+    /**
+     * 修改密码
+     * @param request
+     * @param modelAndView
+     * @return
+     */
     @RequestMapping("updatePassword")
     public ModelAndView updatePassword(HttpServletRequest request, ModelAndView modelAndView) {
         String email = (String) request.getSession().getAttribute("email");
@@ -262,6 +296,12 @@ public class UserContoeller {
         return modelAndView;
     }
 
+    /**
+     * 跳转至忘记密码
+     * @param request
+     * @param modelAndView
+     * @return
+     */
     @RequestMapping("forgetPassword")
     public ModelAndView forgetPassword(HttpServletRequest request, ModelAndView modelAndView) {
 
@@ -270,6 +310,12 @@ public class UserContoeller {
         return modelAndView;
     }
 
+    /**
+     * 忘记密码，发送邮箱
+     * @param request
+     * @param model
+     * @return
+     */
     @RequestMapping("sendEmail")
     public String sendEmail(HttpServletRequest request, Model model) {
         String email = request.getParameter("email");
@@ -284,6 +330,14 @@ public class UserContoeller {
         }
     }
 
+    /**
+     * 验证用户输入的邮箱验证码是否正确
+     * @param request
+     * @param response
+     * @param modelAndView
+     * @return
+     * @throws IOException
+     */
     @RequestMapping("validateEmailCode")
     public ModelAndView validateEmailCode(HttpServletRequest request, HttpServletResponse response, ModelAndView modelAndView) throws IOException {
         String code = request.getParameter("code");
@@ -300,6 +354,12 @@ public class UserContoeller {
         }
     }
 
+    /**
+     * 重置密码
+     * @param request
+     * @param response
+     * @throws IOException
+     */
     @RequestMapping("resetPassword")
     public void resetPassword(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String email = request.getParameter("email");
