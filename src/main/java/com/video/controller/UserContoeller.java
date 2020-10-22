@@ -23,6 +23,13 @@ public class UserContoeller {
     @Autowired
     private UserService userService;
 
+    /**
+     * 用户注册
+     * @param request
+     * @param response
+     * @param modelAndView
+     * @return
+     */
     @RequestMapping("insertUser")
     public String insertUser(HttpServletRequest request, HttpServletResponse response, ModelAndView modelAndView) {
 
@@ -40,9 +47,14 @@ public class UserContoeller {
             return "success";
         }
         return "error";
-
     }
 
+    /**
+     * 检验用户是否存在
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("validateEmail")
     public String validateEmail(HttpServletRequest request, HttpServletResponse response) {
 
@@ -56,6 +68,12 @@ public class UserContoeller {
         return "success";
     }
 
+    /**
+     * 检验密码是否正确
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("validatePassword")
     public String validatePassword(HttpServletRequest request, HttpServletResponse response) {
 
@@ -69,6 +87,12 @@ public class UserContoeller {
         return userPassword.equals(password) ? "success" : "error0";
     }
 
+    /**
+     * 用户登录
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("loginUser")
     public String loginUser(HttpServletRequest request, HttpServletResponse response) {
         String email = request.getParameter("email");
@@ -86,7 +110,13 @@ public class UserContoeller {
         return "failure";
     }
 
-
+    /**
+     * 个人界面
+     * @param request
+     * @param response
+     * @param modelAndView
+     * @return
+     */
     @RequestMapping("showMyProfile")
     public ModelAndView showMyProfile(HttpServletRequest request, HttpServletResponse response, ModelAndView modelAndView) {
 
@@ -101,16 +131,28 @@ public class UserContoeller {
         return modelAndView;
     }
 
+    /**
+     * 退出登录
+     * @param session
+     * @param request
+     * @param response
+     * @throws IOException
+     */
     @RequestMapping("loginOut2")
     public void loginOut2(HttpSession session, HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         session.setAttribute("userAccount",null);
 
-
-
         response.sendRedirect("/subject/selectAll");
     }
 
+    /**
+     *
+     * @param request
+     * @param response
+     * @param modelAndView
+     * @return
+     */
     @RequestMapping("changeProfile")
     public ModelAndView changeProfile(HttpServletRequest request, HttpServletResponse response, ModelAndView modelAndView) {
 
@@ -203,7 +245,6 @@ public class UserContoeller {
         modelAndView.setViewName("before/password_safe.jsp");
 
         return modelAndView;
-
     }
 
     @RequestMapping("updatePassword")
@@ -219,7 +260,6 @@ public class UserContoeller {
         modelAndView.setViewName("before/my_profile.jsp");
 
         return modelAndView;
-
     }
 
     @RequestMapping("forgetPassword")
@@ -228,7 +268,6 @@ public class UserContoeller {
         modelAndView.setViewName("before/forget_password.jsp");
 
         return modelAndView;
-
     }
 
     @RequestMapping("sendEmail")
@@ -241,10 +280,8 @@ public class UserContoeller {
             String validateCode = MailUtils.getValidateCode(6);
             MailUtils.sendMail(email, "你好，您要重置密码的验证码为： " + validateCode, "密码重置邮件");
 
-
             return "success," + validateCode;
         }
-
     }
 
     @RequestMapping("validateEmailCode")
@@ -261,7 +298,6 @@ public class UserContoeller {
             modelAndView.setViewName("before/forget_password.jsp");
             return modelAndView;
         }
-
     }
 
     @RequestMapping("resetPassword")
@@ -272,8 +308,5 @@ public class UserContoeller {
         userService.updatePassWord(email, password);
 
         response.sendRedirect("/subject/selectAll");
-
     }
-
-
 }

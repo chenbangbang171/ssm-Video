@@ -15,6 +15,7 @@ public class VideoServiceImpl implements VideoService {
     @Autowired
     private VideoMapper videoMapper;
 
+
     @Override
     public Video getVideoById(int videoId) {
         return videoMapper.getVideoById(videoId);

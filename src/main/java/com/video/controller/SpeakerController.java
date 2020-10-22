@@ -21,12 +21,17 @@ public class SpeakerController {
 
     @Autowired
     private SpeakerService speakerService;
-
+    /**
+     * 展示 讲师 列表
+     * @param modelAndView
+     * @param pageNum 当前页数
+     * @param pageSize 当前页数大小
+     * @return
+     */
     @RequestMapping("showSpeakerList")
     public ModelAndView showSpeakerList(ModelAndView modelAndView,
                                         @RequestParam(defaultValue = "1", required = false) Integer pageNum,
-                                        @RequestParam(defaultValue = "10", required = false) Integer pageSize
-    ) {
+                                        @RequestParam(defaultValue = "10", required = false) Integer pageSize) {
 
         PageHelper.startPage(pageNum, pageSize);
         List<Speaker> speakerList = speakerService.queryAllSpeaker();
@@ -36,13 +41,26 @@ public class SpeakerController {
         return modelAndView;
     }
 
+    /**
+     * 删除讲师
+     * @param request
+     * @return
+     * @throws IOException
+     */
     @RequestMapping("deleteSpeakerById")
-    public String deleteSpeakerById(HttpServletRequest request) throws IOException {
+    public String deleteSpeakerById(HttpServletRequest request) {
         String id = request.getParameter("id");
         speakerService.deleteSpeakerById(Integer.parseInt(id));
         return "success";
     }
 
+    /**
+     *  修改指定讲师的信息
+     * @param request
+     * @param modelAndView
+     * @return
+     * @throws IOException
+     */
     @RequestMapping("edit")
     public ModelAndView edit(HttpServletRequest request, ModelAndView modelAndView) throws IOException {
         String id = request.getParameter("id");
@@ -53,13 +71,26 @@ public class SpeakerController {
         return modelAndView;
     }
 
-
+    /**
+     * 添加讲师
+     * @param modelAndView
+     * @param request
+     * @return
+     * @throws IOException
+     */
     @RequestMapping("addSpeaker")
     public ModelAndView addSpeaker(ModelAndView modelAndView, HttpServletRequest request) throws IOException {
         modelAndView.setViewName("behind/addSpeaker.jsp");
         return modelAndView;
     }
 
+    /**
+     * 保存或更新讲师
+     * @param request
+     * @param speaker
+     * @param response
+     * @throws IOException
+     */
     @RequestMapping("saveOrUpdate")
     public void saveOrUpdate(HttpServletRequest request, Speaker speaker, HttpServletResponse response) throws IOException {
         String id = request.getParameter("id");
@@ -73,6 +104,4 @@ public class SpeakerController {
         }
         response.sendRedirect("/speaker/showSpeakerList");
     }
-
-
 }

@@ -228,7 +228,7 @@
             <p class="navbar-text navbar-right">
                 <span>${sessionScope.amdin.admUserName}</span> <i class="glyphicon glyphicon-log-in"
                                                          aria-hidden="true"></i>&nbsp;&nbsp;<a
-                    href="${pageContext.request.contextPath}/admin/exit"
+                    href="${pageContext.request.contextPath}/subject/selectAll"
                     class="navbar-link">退出</a>
             </p>
         </div>

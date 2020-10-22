@@ -17,6 +17,11 @@ public class SubjectController {
     @Autowired
     private SubjectService subjectService;
 
+    /**
+     * 查询所有
+     * @param modelAndView
+     * @return
+     */
     @RequestMapping("selectAll")
     public ModelAndView queryAllSubject(ModelAndView modelAndView){
         List<Subject> subjects = subjectService.queryAllSubject();

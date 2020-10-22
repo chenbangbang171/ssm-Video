@@ -1,13 +1,11 @@
 package com.video.controller;
 
-import com.video.pojo.Course;
 import com.video.pojo.Subject;
 import com.video.service.CourseService;
 import com.video.service.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -23,6 +21,13 @@ public class CourseController {
     @Autowired
     private SubjectService subjectService;
 
+    /**
+     * 根据 subId 查询视频列表
+     *
+     * @param modelAndView
+     * @param subId
+     * @return
+     */
     @RequestMapping("course/{subId}")
     public ModelAndView querySubjectById(ModelAndView modelAndView, @PathVariable(name = "subId") String subId){
         Subject subject = subjectService.querySubjectById(Integer.parseInt(subId));

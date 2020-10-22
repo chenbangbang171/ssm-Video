@@ -38,6 +38,7 @@ public class VideoController {
     @Autowired
     private SpeakerService speakerService;
 
+
     @RequestMapping("showVideo")
     public ModelAndView getVideo(HttpServletRequest request, HttpServletResponse response) {
         String videoId = request.getParameter("videoId");
