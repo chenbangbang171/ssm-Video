@@ -49,7 +49,6 @@ public class UserContoeller {
         String test = request.getParameter("email");
 
         String byEmail = userService.selectByEmail(test);
-        System.out.println();
         if (byEmail != null && byEmail != "") {
             return "error";
         }
@@ -236,7 +235,7 @@ public class UserContoeller {
             return "hasNoUser";
         } else {
             String validateCode = MailUtils.getValidateCode(6);
-            MailUtils.sendMail("1713085499@qq.com", "你好，您要重置密码的验证码为： " + validateCode, "密码重置邮件");
+            MailUtils.sendMail(email, "你好，您要重置密码的验证码为： " + validateCode, "密码重置邮件");
 
 
             return "success," + validateCode;
