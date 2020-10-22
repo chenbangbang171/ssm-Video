@@ -29,7 +29,7 @@
     <menu>
         <div class="container clearfix">
             <ul class="clearfix f_left">
-                <li><a href="${pageContext.request.contextPath}">首页</a></li>
+                <li><a href="${pageContext.request.contextPath}/subject/selectAll">首页</a></li>
                 <li><a href="${pageContext.request.contextPath}/course/course/1">课程</a></li>
                 <li><a href="#">关于我们</a></li>
                 <li class="menu_active"><a href="${pageContext.request.contextPath}/user/showMyProfile">个人中心</a></li>
@@ -40,12 +40,12 @@
             </div>
             <div id="user_bar">
                 <a href="user/showMyProfile">
-                    <c:if test="${empty user.imgUrl}">
+                    <c:if test="${empty user.userImgUrl}">
                         <img id="avatar" src="${pageContext.request.contextPath}/img/avatar_lg.png" alt="">
                     </c:if>
 
-                    <c:if test="${not empty user.imgUrl}">
-                        <img id="avatar" src="http://localhost:8081/video/${user.imgUrl}" alt="">
+                    <c:if test="${not empty user.userImgUrl}">
+                        <img id="avatar" src="http://localhost:8083/pics/${user.userImgUrl}" alt="">
                     </c:if>
 
                 </a>
@@ -69,37 +69,37 @@
 
                 <div class="proflle_tab_workplace clearfix">
                     <div class="profile_avatar_area">
-                        <c:if test="${empty user.imgUrl}">
+                        <c:if test="${empty user.userImgUrl}">
                             <img id="avatar" src="${pageContext.request.contextPath}/img/avatar_lg.png" alt="">
                         </c:if>
 
-                        <c:if test="${not empty user.imgUrl}">
-                            <img id="avatar" width="180px" heigth="180px" src="http://localhost:8081/video/${user.imgUrl}" alt="">
+                        <c:if test="${not empty user.userImgUrl}">
+                            <img id="avatar" width="180px" heigth="180px" src="http://localhost:8083/pics/${user.userImgUrl}" alt="">
                         </c:if>
                         <p>
-                            <c:if test="${not empty user.nickName}">
-                                <span>${user.nickName}</span>
+                            <c:if test="${not empty user.userNickName}">
+                                <span>${user.userNickName}</span>
                             </c:if>
-                            <c:if test="${empty user.nickName}">
-                                <span>${user.email}</span>
+                            <c:if test="${empty user.userNickName}">
+                                <span>${user.userEmail}</span>
                             </c:if>
                             欢迎回来！</p>
                     </div>
                     <ul class="profile_ifo_area">
-                        <li><span class="dd">昵&#x3000;称：</span>${user.nickName}</li>
+                        <li><span class="dd">昵&#x3000;称：</span>${user.userNickName}</li>
                         <li><span class="dd">性&#x3000;别：</span>
-                            <c:if test="${user.sex=='woman'}">
+                            <c:if test="${user.userSex=='woman'}">
                                 女
                             </c:if>
-                            <c:if test="${user.sex=='man'}">
+                            <c:if test="${user.userSex=='man'}">
                                 男
                             </c:if>
                         </li>
                         <li><span class="dd">生&#x3000;日：</span>
-                            <time data="1990-06-06">${user.birthday}</time>
+                            <time data="1990-06-06">${user.userBirthday}</time>
                         </li>
-                        <li><span class="dd">邮&#x3000;箱：</span>${user.email}</li>
-                        <li><span class="dd">所在地：</span>${user.address}</li>
+                        <li><span class="dd">邮&#x3000;箱：</span>${user.userEmail}</li>
+                        <li><span class="dd">所在地：</span>${user.userAddress}</li>
 
                     </ul>
                 </div>

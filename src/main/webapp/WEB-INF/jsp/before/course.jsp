@@ -42,9 +42,8 @@
 
         $(function () {
 
-
             //div 两个哪个显示呢？
-            if (null != "${sessionScope.userAccount}" && "${sessionScope.userAccount}" != "") {
+            if (null != "${sessionScope.userAccount.userEmail}" && "${sessionScope.userAccount.userEmail}" != "") {
                 $("#regBlock").css("display", "none");
                 $("#userBlock").css("display", "block");
             } else {
@@ -233,7 +232,7 @@
         <div class="mask_content_body">
             <form id="regForm" action="/user/insertUser">
                 <h3>新用户注册</h3>
-                <input type="email" id="regEmail" placeholder="请输入邮箱" name="email"><span id="emailMsg"></span>
+                <input type="email" id="regEmail" placeholder="请输入邮箱" name="email"><span id="emazilMsg"></span>
                 <input type="password" id="regPsw" placeholder="请输入密码" name="password">
                 <input type="password" id="regPswAgain" placeholder="请再次输入密码" name="psw_again"><span id="passMsg"></span>
                 <div id="yzm" class="form-inline">
@@ -258,7 +257,7 @@
         //alert("${sessionScope.userAccount}");
         //判断用户是否登录
         //alert($("#isLogin").val());
-        if ((null != "${sessionScope.userAccount}" && "${sessionScope.userAccount}" != "") || ($("#isLogin").val() == 1)) {
+        if ((null != "${sessionScope.userAccount.userEmail}" && "${sessionScope.userAccount.userEmail}" != "") || ($("#isLogin").val() == 1)) {
             //如果登录
             location.href = "${pageContext.request.contextPath}/video/showVideo?videoId=" + videoId + "&subName=" + '${subject.subName}';
         } else {

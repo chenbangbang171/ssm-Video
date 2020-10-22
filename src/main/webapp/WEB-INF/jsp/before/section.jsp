@@ -21,7 +21,7 @@
     <script type="text/javascript">
         $(function () {
             //div 两个哪个显示呢？
-            if (null != "${sessionScope.userAccount}" && "${sessionScope.userAccount}" != "") {
+            if (null != "${sessionScope.userAccount.userEmail}" && "${sessionScope.userAccount.userEmail}" != "") {
                 $("#regBlock").css("display", "none");
                 $("#userBlock").css("display", "block");
             } else {
@@ -193,7 +193,7 @@
     <script src="${pageContext.request.contextPath}/js/vueSection.js"></script> --%>
 <script type="text/javascript">
     $("#loginout2").click(function () {
-        location.href = "${pageContext.request.contextPath}/user/loginOut2"
+        location.href = "${pageContext.request.contextPath}/user/loginOut2";
 
         <%--$.get("${pageContext.request.contextPath}/user/loginOut", null, function () {--%>
         <%--    /* $("#regBlock").css("display","block");--%>

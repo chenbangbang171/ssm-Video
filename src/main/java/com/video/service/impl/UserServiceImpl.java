@@ -26,4 +26,29 @@ public class UserServiceImpl implements UserService {
     public User loginUser(String email, String pwd) {
         return userMapper.loginUser(email,pwd);
     }
+
+    @Override
+    public User selectByUser(String email) {
+        return userMapper.selectByUser(email);
+    }
+
+    @Override
+    public Integer updateUser(String email, String nickName, String sex, String birthday, String address) {
+        return userMapper.updateUser(email,nickName,sex,birthday,address);
+    }
+
+    @Override
+    public void upLoadImage(String email, String photoFileName) {
+        userMapper.upLoadImage(email, photoFileName);
+    }
+
+    @Override
+    public User selectByImg(String email) {
+        return userMapper.selectByImg(email);
+    }
+
+    @Override
+    public void updatePassWord(String email, String newPassWord) {
+        userMapper.updatePassWord(email,newPassWord);
+    }
 }
