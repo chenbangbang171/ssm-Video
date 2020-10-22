@@ -21,7 +21,7 @@
     <script type="text/javascript">
         $(function () {
             //div 两个哪个显示呢？
-            if (null != "${sessionScope.userAccount}" && "${sessionScope.userAccount}" != "") {
+            if (null != "${sessionScope.userAccount.userEmail}" && "${sessionScope.userAccount.userEmail}" != "") {
                 $("#regBlock").css("display", "none");
                 $("#userBlock").css("display", "block");
             } else {
@@ -50,7 +50,7 @@
         <div id="userBlock" style="display:none;float:right">
 
             <a href="javascript:;" id="loginout2">退出</a>
-            <a href="${pageContext.request.contextPath}/user/showMyProfile" id="account">${sessionScope.userAccount}</a>
+            <a href="${pageContext.request.contextPath}/user/showMyProfile" id="account">${sessionScope.userAccount.userEmail}</a>
         </div>
 
         <a onclick="JavaScript:addFavorite2()"><img src="${pageContext.request.contextPath}/img/sc.png"
@@ -67,7 +67,7 @@
              draggable="false">
         <ul class="text_13 f_right">
             <li>
-                <a href="http://chengjian100.com/" target="_blank">首页</a>
+                <a href="/subject/selectAll" target="_blank">首页</a>
             </li>
             <li class="nav_down">
                 高端课程<img src="${pageContext.request.contextPath}/img/nav_down.png" alt="" draggable="false">
@@ -193,7 +193,7 @@
     <script src="${pageContext.request.contextPath}/js/vueSection.js"></script> --%>
 <script type="text/javascript">
     $("#loginout2").click(function () {
-        location.href = "${pageContext.request.contextPath}/user/loginOut2"
+        location.href = "${pageContext.request.contextPath}/user/loginOut2";
 
         <%--$.get("${pageContext.request.contextPath}/user/loginOut", null, function () {--%>
         <%--    /* $("#regBlock").css("display","block");--%>

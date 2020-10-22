@@ -175,7 +175,6 @@
                 <li><a href="${pageContext.request.contextPath}/speaker/showSpeakerList">主讲人管理</a></li>
                 <li><a href="${pageContext.request.contextPath}/showCourseList">课程管理</a></li>
 
-
             </ul>
             <p class="navbar-text navbar-right">
                 <span>${sessionScope.userName}</span> <i class="glyphicon glyphicon-log-in"

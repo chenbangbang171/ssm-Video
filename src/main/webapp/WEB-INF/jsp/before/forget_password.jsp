@@ -25,10 +25,18 @@
                     //alert("====");
                     var params = {"email": email.val()};
                     email.load("${pageContext.request.contextPath}/user/sendEmail", params, function (data) {
-                        if (data == "hasNoUser") {
+                        var result = new String();
+                        result = data;
+                        var strings = result.split(",");
+                        alert(strings[0])
+                        alert(strings[1])
+
+                        if (strings[0] == "hasNoUser") {
                             alert("邮箱未注册")
-                        } else if (data == "success") {
+                        } else if (strings[0] == "success") {
                             alert("邮件发送成功");
+                            document.getElementById("validateCode").value = strings[1];
+                            alert(document.getElementById("validateCode").value);
                             //倒计时
                             var time = 60;
                             var timer = setInterval(function () {
@@ -65,6 +73,7 @@
 <main>
     <div class="container">
         <form class="ma" action="${pageContext.request.contextPath}/user/validateEmailCode">
+            <input type="hidden" name = "validateCode" id="validateCode" value="">
             <div class="form_header">
                 <div class="form_title">
                     <h2>忘记密码</h2>
@@ -76,8 +85,10 @@
             </div>
             <div class="form_body">
                 <input type="email" placeholder="请输入登录邮箱" name="email" value="${email}">
-                <input type="text" placeholder="请输入验证码" name="code"><input type="button" id="yzmBtn" value="获取验证码"/>
+                <input type="text" placeholder="请输入验证码" name="code">
+                <input type="button" id="yzmBtn" value="获取验证码"/>
                 <input type="submit" value="提交">
+
             </div>
             <div class="form_footer">
                 <div class="FAQ">

@@ -1,4 +1,4 @@
-package com.video.service.impl;
+package com.video.service.Impl;
 
 import com.video.mapper.VideoMapper;
 import com.video.pojo.Video;

@@ -1,4 +1,4 @@
-package com.video.service.impl;
+package com.video.service.Impl;
 
 import com.video.mapper.AdminMapper;
 import com.video.pojo.Admin;

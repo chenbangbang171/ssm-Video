@@ -9,7 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 @RestController
 @RequestMapping("admin")
@@ -19,7 +18,7 @@ public class AdminController {
     private AdminService adminService;
 
     @RequestMapping("login-view")
-    public ModelAndView loginView(ModelAndView modelAndView) throws IOException {
+    public ModelAndView loginView(ModelAndView modelAndView) throws Exception {
         modelAndView.setViewName("behind/login.jsp");
         return modelAndView;
     }
