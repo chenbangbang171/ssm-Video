@@ -15,4 +15,5 @@ public class Video {
     private int  videoPlayNum;
     private Speaker speaker;
 
+
 }

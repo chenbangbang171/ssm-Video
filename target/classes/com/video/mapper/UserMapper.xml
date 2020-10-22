@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 该mapper.xml映射文件的唯一标识符 -->
+<mapper namespace="com.video.mapper.UserMapper">
+
+    <resultMap id="user" type="com.video.pojo.User">
+        <id property="userId" column="id"></id>
+        <result property="userEmail" column="email"></result>
+        <result property="userPhoneNum" column="phoneNum"></result>
+        <result property="userPassword" column="password"></result>
+        <result property="userCode" column="code"></result>
+        <result property="userNickName" column="nickName"></result>
+        <result property="userSex" column="sex"></result>
+        <result property="userBirthday" column="birthday"></result>
+        <result property="userAddress" column="address"></result>
+        <result property="userImgUrl" column="imgUrl"></result>
+        <result property="UsercreateTime" column="createTime"></result>
+    </resultMap>
+
+    <insert id="insertUser" parameterType="com.video.pojo.User">
+        insert into user(email,password) values(#{email},#{password})
+    </insert>
+
+    <select id="selectByEmail" resultType="java.lang.String">
+        select email from user where email=#{email,jdbcType=VARCHAR}
+    </select>
+
+    <select id="loginUser" resultMap="user">
+        select * from user where email = #{email} and password = #{pwd}
+    </select>
+
+    <select id="selectByUser" resultMap="user">
+        select nickName,sex,birthday,email,address from user where email=#{email,jdbcType=VARCHAR}
+    </select>
+
+    <update id="updatePassWord">
+        update user set password = #{newPassWord} where email = #{email}
+    </update>
+
+    <select id="selectByImg" resultMap="user">
+        select * from user where email = #{email}
+    </select>
+
+
+    <update id="updateUser" parameterType="com.video.pojo.User">
+        update user
+        set nickName = #{nickName,jdbcType=VARCHAR}, sex = #{sex,jdbcType=VARCHAR} ,birthday = #{birthday,jdbcType=VARCHAR},address = #{address,jdbcType=VARCHAR}
+        where email = #{email}
+    </update>
+
+    <update id="upLoadImage" parameterType="com.video.pojo.User">
+        update user
+        set imgUrl = #{photoFileName,jdbcType=VARCHAR}
+        where email = #{email}
+    </update>
+
+</mapper>

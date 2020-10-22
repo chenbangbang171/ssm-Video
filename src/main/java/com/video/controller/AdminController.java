@@ -28,8 +28,9 @@ public class AdminController {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         Admin admin = adminService.login(username, password);
+        request.getSession(false).setAttribute("amdin",admin);
 
-        return admin == null ? "success" : "failure";
+        return admin != null ? "success" : "failure";
     }
 
 }

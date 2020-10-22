@@ -8,4 +8,6 @@ import org.springframework.stereotype.Repository;
 public interface AdminMapper {
 
     Admin login(@Param("adminName") String adminName,@Param("adminPwd") String adminPwd);
+
+
 }
