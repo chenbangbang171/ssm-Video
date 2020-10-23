@@ -23,7 +23,6 @@
         </association>
     </resultMap>
 
-
     <select id="getVideoById" resultMap="video">
         select v.id videoId,v.title,v.detail,v.time,v.speaker_id,
                 v.course_id,v.video_url,v.image_url,v.play_num,
@@ -48,7 +47,6 @@
             </if>
         </trim>
     </select>
-
 
     <delete id="deleteVideoById">
         delete from video where id = #{videoId}

@@ -26,15 +26,11 @@
          select  id courseId,course_title,course_desc,subject_id from course
     </select>
 
-
     <select id="queryCourseById" resultMap="course" >
         select  c.id courseId,c.course_title,c.course_desc,c.subject_id,
                   v.id videoId,v.title,v.detail,v.time,v.speaker_id,
                    v.course_id,v.video_url,v.image_url,v.play_num
          from course c inner join video v on c.id = v.course_id and  c.id = #{courseId}
     </select>
-
-
-
 
 </mapper>

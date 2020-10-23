@@ -28,15 +28,15 @@
                         var result = new String();
                         result = data;
                         var strings = result.split(",");
-                        alert(strings[0])
-                        alert(strings[1])
+                        //alert(strings[0])
+                        //alert(strings[1])
 
                         if (strings[0] == "hasNoUser") {
                             alert("邮箱未注册")
                         } else if (strings[0] == "success") {
-                            alert("邮件发送成功");
+                            //alert("邮件发送成功");
                             document.getElementById("validateCode").value = strings[1];
-                            alert(document.getElementById("validateCode").value);
+                           // alert(document.getElementById("validateCode").value);
                             //倒计时
                             var time = 60;
                             var timer = setInterval(function () {
@@ -88,7 +88,6 @@
                 <input type="text" placeholder="请输入验证码" name="code">
                 <input type="button" id="yzmBtn" value="获取验证码"/>
                 <input type="submit" value="提交">
-
             </div>
             <div class="form_footer">
                 <div class="FAQ">
